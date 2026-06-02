@@ -16,6 +16,9 @@
             <a href="../index.html" class="logo">
                 <img src="../img/logoAsensoBarberClub.png" alt="Logo Asenbar Barber Club">
             </a>
+            <div class="menu-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
             <ul class="nav-links">
                 <li>
                     <a href="../index.html">Inicio</a>
@@ -52,6 +55,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
 </body>
 
 </html>
